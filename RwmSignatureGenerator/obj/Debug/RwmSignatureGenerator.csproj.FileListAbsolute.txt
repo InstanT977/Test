@@ -1,0 +1,7 @@
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\bin\Debug\RwmSignatureGenerator.exe.config
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\bin\Debug\RwmSignatureGenerator.exe
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\bin\Debug\RwmSignatureGenerator.pdb
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\obj\Debug\RwmSignatureGenerator.csproj.CoreCompileInputs.cache
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\obj\Debug\RwmSignatureGenerator.exe
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\obj\Debug\RwmSignatureGenerator.pdb
+C:\Users\RWHite\source\repos\RwmSignatureGenerator\RwmSignatureGenerator\bin\Debug\GenerateSignature_eazylaunch.bat
