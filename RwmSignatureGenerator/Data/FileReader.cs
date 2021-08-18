@@ -27,6 +27,10 @@ namespace RwmSignatureGenerator.Data
             {
                 throw new FileNotFoundException($"File for reading not found: {filePath}");
             }
+            if(_blockSize <= 0)
+            {
+                throw new Exception("Incorrect blocks size for file! Block size cannot be zero and negative!");
+            }
             if(_blockSize > _fileInfo.Length)
             {
                 throw new Exception("Too high block size for selected file!");
