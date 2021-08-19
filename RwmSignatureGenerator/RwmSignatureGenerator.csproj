@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data\HashGenerators\Sha56HashGenerator.cs" />
     <Compile Include="SignatureGenerator.cs" />
-    <Compile Include="Data\ThreadsWorker.cs" />
+    <Compile Include="Data\RThreadPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

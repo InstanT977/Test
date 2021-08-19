@@ -31,11 +31,11 @@ namespace RwmSignatureGenerator
                 _reader = new FileReader(filePath, signatureBlockSize,_logger);
                 _reader.FileBlockRecieved += _reader_FileBlockRecieved;
                 long signPerspectiveCount = _reader.FileBlocksCount;
-                ThreadsWorker.Instance.Run(ComputeHash, ref signPerspectiveCount);
+                RThreadPool.Instance.Run(ComputeHash, ref signPerspectiveCount);
                 if (signPerspectiveCount > 0)
                 {
                     _reader.Read();
-                    ThreadsWorker.Instance.WaitWorksFinished();
+                    RThreadPool.Instance.WaitWorksFinished();
                 }
                 else
                 {
@@ -45,7 +45,8 @@ namespace RwmSignatureGenerator
             catch (Exception ex)
             {
                 _logger.Error(ex);
-                ThreadsWorker.Instance.StopWork();
+                RThreadPool.Instance.StopWork();
+                RThreadPool.Instance.Check((int a) => { return a; });
             }
         }
 
@@ -55,7 +56,7 @@ namespace RwmSignatureGenerator
             {
                 try
                 {
-                    if (ThreadsWorker.Instance.NeedStopWork())
+                    if (RThreadPool.Instance.NeedStopWork())
                     {
                         return;
                     }
@@ -63,7 +64,7 @@ namespace RwmSignatureGenerator
                     _fileBlocksQueue.TryDequeue(out currentblock);
                     if (currentblock == null)
                     {
-                        if(ThreadsWorker.Instance.IsWorkCanBeFinished)
+                        if(RThreadPool.Instance.IsWorkCanBeFinished)
                         {
                             return;
                         }
