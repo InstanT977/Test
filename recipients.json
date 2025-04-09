@@ -1,0 +1,52 @@
+[
+  {
+    "email": "instant.977@gmail.ru",
+    "extra": {
+      "user_name": "Ольга",
+      "start_day": "20",
+      "start_month_short_name": "марта",
+      "orgBlocks": [
+        {
+          "title": "Блок 1",
+          "orgs": [
+            {
+              "name": "ПАО \"Т ПЛЮС\"",
+              "url": "https://glavbukh.1cont.ru/contragent/1056315070350/history",
+              "changes": [
+                {
+                  "number": "401",
+                  "title": "Открыты новые исполнительные производства"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "email": "megaster.977@gmail.com",
+    "extra": {
+      "user_name": "Иван",
+      "start_day": "21",
+      "start_month_short_name": "апреля",
+      "orgBlocks": [
+        {
+          "title": "Блок 2",
+          "orgs": [
+            {
+              "name": "ООО \"Ромашка\"",
+              "url": "https://example.com/org/123",
+              "changes": [
+                {
+                  "number": "403",
+                  "title": "Смена юридического адреса"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
